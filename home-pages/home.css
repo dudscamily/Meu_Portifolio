@@ -150,6 +150,10 @@ button:hover {
         height: 40px;
         border-radius: 10px;
         font-size: 20px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
     }
 
     .photo-perfil,
@@ -176,6 +180,10 @@ button:hover {
 
     .social-midias button {
         font-size: 16px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
     }
 
     .social-midias img {
