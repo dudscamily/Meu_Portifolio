@@ -119,17 +119,30 @@ button:hover {
         width: 100%;
         max-width: 350px;
     }
-
-    .languages img {
-        width: 38px;
-        height: 38px;
-    }
-
     .languages {
-        padding: 18px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         gap: 0;
+    
+        img {
+            width: 38px;
+            height: 38px;
+        }
+    
+        > .skills-top {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            
+        }
+        
+        > .skills-bottom {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
     }
-
     button {
         width: 150px;
         font-size: 16px;
@@ -137,15 +150,6 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .skills {
-        #tittle{
-            font-size: 24px;
-            text-align: left;
-         }
-        span{
-            font-size: 16px;
-        }
-    }
 
     .skills { 
         #text {
