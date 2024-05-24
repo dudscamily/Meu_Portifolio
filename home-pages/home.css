@@ -149,30 +149,31 @@ button:hover {
         display: flex;
         gap: 15px;
         align-items: center;
-
-        button {
-            width: 165px;
-            height: 55px;
-            background-color: white;
-            border: none;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            
-    
-            color: #92A7C8;
-            font-size: 25px;
-            cursor: pointer;
-    
-        }
-        
-        a {
-            width: 165px;
-            text-decoration: none;
-        }
     }
+
+    .social-midias button {
+        width: 165px;
+        height: 55px;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+
+        color: #92A7C8;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+    
+    .social-midias a {
+        width: 165px;
+        text-decoration: none;
+    }
+    
 
     .social-midias button {
         width: 125px;
