@@ -162,7 +162,7 @@ button:hover {
 @media screen and (max-width: 480px) {
     body {
         display:flex;
-        padding: 20px;
+        padding: 50px;
         gap: 20px;
     }
 
