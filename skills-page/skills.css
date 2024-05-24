@@ -148,6 +148,7 @@ button:hover {
     }
 
     .languages img {
+        padding-top: 20px;
         width: 30px;
         height: 30px;
     }
