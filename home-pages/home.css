@@ -154,6 +154,14 @@ button:hover {
         align-items: center;
         justify-content: center;
         gap: 5px;
+        color: #92A7C8;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social-midias a {
+        width: 165px;
+        text-decoration: none;
     }
 
     .photo-perfil,
@@ -184,6 +192,14 @@ button:hover {
         align-items: center;
         justify-content: center;
         gap: 5px;
+        color: #92A7C8;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social-midias a {
+        width: 165px;
+        text-decoration: none;
     }
 
     .social-midias img {
