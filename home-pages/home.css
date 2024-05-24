@@ -40,6 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    text-align: left; 
 }
 
 .about-me > #presentation, 
@@ -129,7 +130,6 @@ button:hover {
     }
 
     .about-me {
-        text-align: left;
         padding: 0;
     }
 
@@ -140,7 +140,6 @@ button:hover {
     .about-me > #text-aboutme {
         width: 100%;
         max-width: 250px;
-        text-align: left;
     }
 
     .social-midias {
@@ -167,13 +166,11 @@ button:hover {
 
     .about-me > #name {
         font-size: 24px;
-        text-align: left;
     }
 
     .about-me > #text-aboutme {
         font-size: 16px;
         width: 100%;
-        text-align: left;
     }
 
     .social-midias button {

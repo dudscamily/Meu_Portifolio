@@ -1,26 +1,52 @@
 @import url('../index.css');
 
 body {
-    background-color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 120px;
     overflow: hidden;
-    padding: 0 120px;
+}
+
+@keyframes roll_image {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 
 .skills {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     color: #92A7C8;
     padding: 50px 0;
     width: 100%;
     margin: 0 auto;
+    flex-direction: column;
 }
 
-#tittle {
+.skills #tittle {
     font-size: 45px;
     padding: 0 0 50px 0;
     display: flex;
@@ -28,13 +54,15 @@ body {
     gap: 10px;
 }
 
-#tittle span {
+.skills #tittle span {
     font-size: 25px;
 }
 
-#text {
+.skills #text {
     font-size: 20px;
     width: 470px;
+    margin-bottom: 30px; /* Espaçamento entre o texto e as linguagens */
+    text-align: left; /* Alinhar o texto à esquerda */
 }
 
 .languages {
@@ -45,8 +73,8 @@ body {
 }
 
 .languages img {
-    width: 60px;
-    height: 60px;
+    width: 80px; /* Aumenta o tamanho das imagens */
+    height: 80px; /* Aumenta o tamanho das imagens */
 }
 
 .languages > .skills-top,
@@ -86,7 +114,10 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        padding: 0 52px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 52px;
     }
 
     .skills {
@@ -95,26 +126,27 @@ button:hover {
         padding: 0;
     }
 
-    #tittle {
+    .skills #tittle {
         text-align: center;
         font-size: 26px;
         padding-bottom: 8px;
     }
 
-    #tittle span {
+    .skills #tittle span {
         font-size: 15px;
     }
 
-    #text {
-        text-align: center;
+    .skills #text {
+        text-align: left;
         font-size: 15px;
         width: 100%;
         max-width: 350px;
+        margin-bottom: 20px;
     }
 
     .languages img {
-        width: 38px;
-        height: 38px;
+        width: 60px; 
+        height: 60px; 
     }
 
     button {
@@ -125,32 +157,28 @@ button:hover {
 
 @media screen and (max-width: 480px) {
     body {
-        padding: 0 20px;
+        padding: 20px;
     }
 
-    .skills {
-        padding: 20px 0;
-    }
-
-    #text {
+    .skills #text {
         font-size: 16px;
-        text-align: center;
+        text-align: left;
         width: 100%;
+        margin-bottom: 20px;
     }
 
-    #tittle {
+    .skills #tittle {
         font-size: 20px;
         padding-bottom: 10px;
     }
 
-    #tittle span {
+    .skills #tittle span {
         font-size: 12px;
     }
 
     .languages img {
-        padding-top: 20px;
-        width: 30px;
-        height: 30px;
+        width: 50px; 
+        height: 50px; 
     }
 
     button {
