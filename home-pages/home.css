@@ -156,6 +156,8 @@ button:hover {
     .photo-efect {
         display: none;
     }
+
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -180,4 +182,6 @@ button:hover {
         width: 20px;
         height: 20px;
     }
+
+}
 }
