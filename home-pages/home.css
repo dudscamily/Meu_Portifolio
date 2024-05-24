@@ -6,14 +6,12 @@ body {
     justify-content: space-between;
     padding: 60px 120px;
     overflow: hidden;
-    
 }
 
 @keyframes roll_image {
     0% {
         transform: rotate(0);
     }
-    
     10% {
         transform: rotate(14deg);
     }
@@ -36,26 +34,32 @@ body {
         transform: rotate(0);
     }
 }
+
 .about-me {
     color: white;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
-    > #presentation , #text-aboutme{
-        font-size: 24px;
-    }
-    > #name {
-        font-size: 30px;
-    }
-    > #text-aboutme{
-        font-size: 20px;
-        width: 500px;
-    }
-    > img {
-        width: 42px;
-        height: 42px;
-        animation: roll_image  2.5s infinite;
-    }
+}
+
+.about-me > #presentation, 
+.about-me > #text-aboutme {
+    font-size: 24px;
+}
+
+.about-me > #name {
+    font-size: 30px;
+}
+
+.about-me > #text-aboutme {
+    font-size: 20px;
+    width: 500px;
+}
+
+.about-me > img {
+    width: 42px;
+    height: 42px;
+    animation: roll_image 2.5s infinite;
 }
 
 .social-midias {
@@ -63,57 +67,53 @@ body {
     align-items: center;
     padding: 20px 0;
     gap: 25px;
+}
 
-    button {
-        width: 165px;
-        height: 55px;
-        background-color: white;
-        border: none;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        
+.social-midias button {
+    width: 165px;
+    height: 55px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #92A7C8;
+    font-size: 25px;
+    cursor: pointer;
+}
 
-        color: #92A7C8;
-        font-size: 25px;
-        cursor: pointer;
+.social-midias a {
+    width: 165px;
+    text-decoration: none;
+}
 
-    }
-    
-    a {
-        width: 165px;
-        text-decoration: none;
-    }
-
-    img {
-        width: 28px;
-        height: 28px;
-    }
-    
+.social-midias img {
+    width: 28px;
+    height: 28px;
 }
 
 button:hover {
     transform: scale(1.02);
 }
 
-.photo-perfil img{
+.photo-perfil img {
     width: 270px;
     height: 350px;
     background-color: white;
     border-radius: 12px;
-    position: relative; 
-    right: 18px; 
-    z-index: 1; 
+    position: relative;
+    right: 18px;
+    z-index: 1;
 }
 
 .photo-efect {
     border: 3px solid white;
-    position: absolute; 
-    right: 100px; 
-    top: 64px; 
-    z-index: 0; 
+    position: absolute;
+    right: 100px;
+    top: 64px;
+    z-index: 0;
     width: 270px;
     height: 350px;
     border-radius: 12px;
@@ -122,85 +122,65 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 52px;
-        
     }
 
     .about-me {
-        text-align: left;
-        flex-direction: column;
         text-align: center;
         padding: 0;
     }
 
-    .about-me #name {
+    .about-me > #name {
         font-size: 28px;
     }
 
-    .about-me #text-aboutme {
-        width: 250px;
-        text-align: left; 
+    .about-me > #text-aboutme {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
     }
 
     .social-midias {
-        display: flex;
         gap: 15px;
-        align-items: center;
     }
 
     .social-midias button {
-        wwidth: 125px;
-        height: 40px; 
-        background-color: white;
-        border: none;
+        width: 125px;
+        height: 40px;
         border-radius: 10px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-
-        color: #92A7C8;
-        font-size: 25px;
-        cursor: pointer;
-
-    }
-    
-    .social-midias a {
-        width: 165px;
-        text-decoration: none;
-    }
-    
-
-    .social-midias button img {
-        width: 28px;
-        height: 28px;
+        font-size: 20px;
     }
 
-    .photo-perfil {
-        display: none; 
-    }
-
+    .photo-perfil,
     .photo-efect {
-        display: none; 
+        display: none;
     }
-
-    
 }
 
 @media screen and (max-width: 480px) {
-    .about-me #name {
+    body {
+        padding: 20px;
+    }
+
+    .about-me > #name {
         font-size: 24px;
     }
 
-    .about-me #text-aboutme {
+    .about-me > #text-aboutme {
         font-size: 16px;
+        width: 100%;
+        text-align: center;
     }
 
     .social-midias button {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .social-midias img {
+        width: 20px;
+        height: 20px;
     }
 }

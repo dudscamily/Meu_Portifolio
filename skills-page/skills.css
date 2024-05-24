@@ -1,6 +1,6 @@
 @import url('../index.css');
 
-body{
+body {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -13,28 +13,28 @@ body{
 .skills {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     color: #92A7C8;
     padding: 50px 0;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
+}
 
-    #tittle {
-        font-size: 45px;
-        padding: 0 0 50px 0;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+#tittle {
+    font-size: 45px;
+    padding: 0 0 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-        span {
-            font-size: 25px;
-        }
-    }
+#tittle span {
+    font-size: 25px;
+}
 
-    #text {
-        font-size: 20px;
-        width: 470px;
-    }
+#text {
+    font-size: 20px;
+    width: 470px;
 }
 
 .languages {
@@ -42,24 +42,18 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 15px;
+}
 
-    img {
-        width: 60px;
-        height: 60px;
-    }
+.languages img {
+    width: 60px;
+    height: 60px;
+}
 
-    > .skills-top {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        
-    }
-    
-    > .skills-bottom {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
+.languages > .skills-top,
+.languages > .skills-bottom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .languages img:hover {
@@ -80,7 +74,6 @@ button {
     cursor: pointer;
     background-color: white;
     border-radius: 8px;
-
     font-size: 20px;
     color: #92A7C8;
     border: 2px solid #92A7C8;
@@ -93,7 +86,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        padding: 52px;
+        padding: 0 52px;
     }
 
     .skills {
@@ -102,63 +95,21 @@ button:hover {
         padding: 0;
     }
 
-    .skills #tittle {
-        text-align: left;
+    #tittle {
+        text-align: center;
         font-size: 26px;
         padding-bottom: 8px;
-
-        span {
-            font-size: 15px;
-        }
     }
 
+    #tittle span {
+        font-size: 15px;
+    }
 
-    .skills #text {
-        text-align: left;
+    #text {
+        text-align: center;
         font-size: 15px;
         width: 100%;
         max-width: 350px;
-    }
-    .languages {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
-    
-        img {
-            width: 38px;
-            height: 38px;
-        }
-    
-        > .skills-top {
-            display: flex;
-            align-items: center;
-            gap: 0;
-            
-        }
-        
-        > .skills-bottom {
-            display: flex;
-            align-items: center;
-            gap: 0;
-        }
-    }
-    button {
-        width: 150px;
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .skills { 
-        #text {
-        font-size: 16px;
-        text-align: left;
-        }
-        span {
-            font-size: 10px;
-        }
     }
 
     .languages img {
@@ -167,16 +118,49 @@ button:hover {
     }
 
     button {
-        display: flex;
-        gap: 5px;
+        width: 150px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .skills {
+        padding: 20px 0;
+    }
+
+    #text {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #tittle {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    #tittle span {
+        font-size: 12px;
+    }
+
+    .languages img {
+        width: 30px;
+        height: 30px;
+    }
+
+    button {
         width: 100px;
         height: 28px;
         font-size: 13px;
-
-        img {
-            width: 13px;
-            height: 13px;
-        }
+        gap: 5px;
     }
+
+    button img {
+        width: 13px;
+        height: 13px;
     }
 }
