@@ -1,0 +1,191 @@
+@import url('../index.css');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 120px;
+    overflow: hidden;
+    
+}
+
+@keyframes roll_image {
+    0% {
+        transform: rotate(0);
+    }
+    
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.about-me {
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    > #presentation , #text-aboutme{
+        font-size: 24px;
+    }
+    > #name {
+        font-size: 30px;
+    }
+    > #text-aboutme{
+        font-size: 20px;
+        width: 500px;
+    }
+    > img {
+        width: 42px;
+        height: 42px;
+        animation: roll_image  2.5s infinite;
+    }
+}
+
+.social-midias {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+
+    button {
+        width: 165px;
+        height: 55px;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+
+        color: #92A7C8;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+    
+    a {
+        width: 165px;
+        text-decoration: none;
+    }
+
+    img {
+        width: 28px;
+        height: 28px;
+    }
+    
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+.photo-perfil {
+    width: 270px;
+    height: 350px;
+    background-color: white;
+    border-radius: 12px;
+    position: relative; 
+    right: 18px; 
+    z-index: 1; 
+}
+
+.photo-efect {
+    border: 3px solid white;
+    position: absolute; 
+    right: 100px; 
+    top: 64px; 
+    z-index: 0; 
+    width: 270px;
+    height: 350px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me {
+        text-align: left;
+    }
+
+    .about-me #name {
+        font-size: 28px;
+    }
+
+    .about-me #text-aboutme {
+        width: 250px;
+        text-align: left; 
+    }
+
+    .social-midias {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .social-midias a {
+        width: auto;
+    }
+
+    .social-midias button {
+        width: 125px;
+        height: 40px; 
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-midias button img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .photo-perfil {
+        display: none; 
+    }
+
+    .photo-efect {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me #name {
+        font-size: 24px;
+    }
+
+    .about-me #text-aboutme {
+        font-size: 16px;
+    }
+
+    .social-midias button {
+        font-size: 20px;
+    }
+}
