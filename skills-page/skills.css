@@ -4,8 +4,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 120px;
+    background-color: white;
+    padding: 0px 120px;
     overflow: hidden;
+    flex-direction: column;
 }
 
 @keyframes roll_image {
@@ -37,13 +39,12 @@ body {
 
 .skills {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     color: #92A7C8;
+    justify-content: space-between;
     padding: 50px 0;
     width: 100%;
     margin: 0 auto;
-    flex-direction: column;
+    align-items: center;
 }
 
 .skills #tittle {
@@ -105,6 +106,7 @@ button {
     font-size: 20px;
     color: #92A7C8;
     border: 2px solid #92A7C8;
+    padding-bottom:;
 }
 
 button:hover {

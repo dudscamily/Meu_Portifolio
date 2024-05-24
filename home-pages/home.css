@@ -6,12 +6,14 @@ body {
     justify-content: space-between;
     padding: 60px 120px;
     overflow: hidden;
+    
 }
 
 @keyframes roll_image {
     0% {
         transform: rotate(0);
     }
+    
     10% {
         transform: rotate(14deg);
     }
@@ -34,33 +36,26 @@ body {
         transform: rotate(0);
     }
 }
-
 .about-me {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-direction: column;
-    text-align: left; 
-}
-
-.about-me > #presentation, 
-.about-me > #text-aboutme {
-    font-size: 24px;
-}
-
-.about-me > #name {
-    font-size: 30px;
-}
-
-.about-me > #text-aboutme {
-    font-size: 20px;
-    width: 500px;
-}
-
-.about-me > img {
-    width: 42px;
-    height: 42px;
-    animation: roll_image 2.5s infinite;
+    > #presentation , #text-aboutme{
+        font-size: 24px;
+    }
+    > #name {
+        font-size: 30px;
+    }
+    > #text-aboutme{
+        font-size: 20px;
+        width: 500px;
+    }
+    > img {
+        width: 42px;
+        height: 42px;
+        animation: roll_image  2.5s infinite;
+    }
 }
 
 .social-midias {
@@ -68,53 +63,57 @@ body {
     align-items: center;
     padding: 20px 0;
     gap: 25px;
-}
 
-.social-midias button {
-    width: 165px;
-    height: 55px;
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: #92A7C8;
-    font-size: 25px;
-    cursor: pointer;
-}
+    button {
+        width: 165px;
+        height: 55px;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
 
-.social-midias a {
-    width: 165px;
-    text-decoration: none;
-}
+        color: #92A7C8;
+        font-size: 25px;
+        cursor: pointer;
 
-.social-midias img {
-    width: 28px;
-    height: 28px;
+    }
+    
+    a {
+        width: 165px;
+        text-decoration: none;
+    }
+
+    img {
+        width: 28px;
+        height: 28px;
+    }
+    
 }
 
 button:hover {
     transform: scale(1.02);
 }
 
-.photo-perfil img {
+.photo-perfil img{
     width: 270px;
     height: 350px;
     background-color: white;
     border-radius: 12px;
-    position: relative;
-    right: 18px;
-    z-index: 1;
+    position: relative; 
+    right: 18px; 
+    z-index: 1; 
 }
 
 .photo-efect {
     border: 3px solid white;
-    position: absolute;
-    right: 100px;
-    top: 64px;
-    z-index: 0;
+    position: absolute; 
+    right: 100px; 
+    top: 64px; 
+    z-index: 0; 
     width: 270px;
     height: 350px;
     border-radius: 12px;
