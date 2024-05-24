@@ -152,15 +152,15 @@ button:hover {
     }
 
     .social-midias button {
-        width: 165px;
-        height: 55px;
+        wwidth: 125px;
+        height: 40px; 
         background-color: white;
         border: none;
-        border-radius: 15px;
+        border-radius: 10px;
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
         
 
         color: #92A7C8;
@@ -174,18 +174,6 @@ button:hover {
         text-decoration: none;
     }
     
-
-    .social-midias button {
-        width: 125px;
-        height: 40px; 
-        background-color: white;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .social-midias button img {
         width: 28px;
