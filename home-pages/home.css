@@ -111,15 +111,17 @@ button:hover {
 .photo-efect {
     border: 3px solid white;
     position: absolute; 
-    right: 100px; 
-    top: 64px; 
+    right: -20px; 
+    top: -20px; 
     z-index: 0; 
     width: 270px;
     height: 350px;
     border-radius: 12px;
     margin-right: 20px;
 }
-
+.left-section{
+    position: relative;
+}
 @media screen and (max-width: 768px) {
     body {
         flex-direction: column;
