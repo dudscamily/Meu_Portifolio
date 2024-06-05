@@ -62,8 +62,8 @@ body {
 .skills #text {
     font-size: 20px;
     width: 470px;
-    margin-bottom: 30px; /* Espaçamento entre o texto e as linguagens */
-    text-align: left; /* Alinhar o texto à esquerda */
+    margin-bottom: 30px; 
+    text-align: left; 
 }
 
 .languages {
@@ -74,8 +74,8 @@ body {
 }
 
 .languages img {
-    width: 80px; /* Aumenta o tamanho das imagens */
-    height: 80px; /* Aumenta o tamanho das imagens */
+    width: 80px;
+    height: 80px;
 }
 
 .languages > .skills-top,
