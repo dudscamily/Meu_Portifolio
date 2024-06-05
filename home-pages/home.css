@@ -127,6 +127,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     body {
+        margin-top: 30px;
         flex-direction: column; 
         align-items: center; 
         padding: 52px;
@@ -147,7 +148,7 @@ button:hover {
     }
 
     .about-me > #text-aboutme {
-        font-size: 15px;
+        font-size: 20px;
         width: 100%;
         max-width: 350px;
         margin-bottom: 20px;
@@ -188,6 +189,7 @@ button:hover {
     }
 
     body {
+        margin-top: 30px;
         padding: 52px;
         text-align: left;
     }
